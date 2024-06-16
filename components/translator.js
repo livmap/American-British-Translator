@@ -49,6 +49,7 @@ class Translator {
     }
 
     translate(text, dict, titles, timeRegex, locale) {
+  
         const lowerText = text.toLowerCase();
         const matchesMap = {};
 
@@ -93,6 +94,8 @@ class Translator {
             matchesMap
         );
 
+        
+        
         return [translation, translationWithHighlight];
     }
 
